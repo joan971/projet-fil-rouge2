@@ -1,0 +1,360 @@
+.logo
+{
+        width: 100px;
+}
+.sociaux
+{
+        display: flex;
+        justify-content: flex-end;
+}
+h1
+{
+        font-size: xx-large;
+        text-align: center;
+        padding: 50px;
+        height: 100px;
+        background-image: url(/image/imag/Rectangle12.jpg);
+        background-size: cover;
+        color: black;   
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #c4c4c4;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+.name, .firstname, .emaile, .sexy, .mess, .envo
+{
+        font-size: large;
+        text-align: center;
+}
+#menu1
+{
+        display: none;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+#menuToggle a:hover
+{
+  color: yellow;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 180px;
+  margin: -100px 0 0 -60px;
+  padding: 40px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background: #62b5f1;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+body
+{
+         margin: 0;
+        padding: 10px;
+        background: #62b5f1;
+        color: black;
+         font-family: roboto;
+}
+.intro, .présent, .histo,.foot
+{
+        padding: 10px;
+        background-color: #c4c4c4;
+        display: block;
+        border-radius: 20px;
+}
+.pays, .accueil, .rencontre
+{
+        padding: 20px;
+        text-align: center;
+}
+.vol, .sourire
+{
+        padding-bottom: 20px;
+        display: block;
+        text-align: center;
+}
+.vol1, .sourire1
+{
+        display: none;
+}
+.video
+{
+       padding-top: 20px;
+       display: block;
+       text-align: center;
+}
+.videodesk, .videotab
+        {
+                display: none;
+        }
+       
+.bodyv
+{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+.container
+{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 30px;
+}
+.container .card
+{
+        position: relative;
+        max-width: 500px;
+        height: 220px;
+        background: white;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+}
+.container .card .imgbx
+{
+        position: relative;
+        width: 260px;
+        height: 190px;
+        top: -60px;
+        left: 20px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgbx img
+{
+        max-width: 100%;
+        border-radius: 4px;
+}
+
+.container .card .content
+{
+        position: relative;
+        margin-top: -100px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        opacity: 0;
+      
+}
+.container .card :hover.content
+{
+      position: relative;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+}
+.submit
+{
+        background: #62b5f1;
+}
+.a
+{
+        color: black;
+}
+@media screen and (min-width: 395px)
+{
+        .vol1, .sourire1
+{
+        display: none;
+        
+}
+.menu1
+{
+        display: none;
+}
+.videodesk, .video
+        {
+                display: none;
+        }
+
+.videotab
+        {
+                padding-top: 20px;
+                display: block;
+                text-align: center;
+        }  
+ .bodyv
+ {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+
+ }
+ 
+}
+@media screen and (min-width: 1100px)
+{
+ #menuToggle, 
+ #menuToggle input:checked ~ ul
+ {
+         display: none;
+ }
+.bodyv
+{
+        flex-wrap: nowrap;
+       
+}
+.pays, .accueil, .rencontre
+{
+        padding: 20px;
+        text-align: center;
+        font-size: x-large;
+}
+.intro, .présent, .histo
+{
+        padding: 10px;
+        background-color: #c4c4c4;
+        display: block;
+        border-radius: 20px;
+        font-size: large;
+        height: 150px;
+        text-align: center;
+}
+.videotab, .video
+{
+        display: none;
+}
+
+.videodesk
+{
+        padding-top: 20px;
+        display: block;
+        text-align: center;
+}
+.vol, .sourire
+{
+        display: none;
+       
+}
+.vol1, .sourire1
+{
+        display: block;
+        text-align: center;
+        padding: 20px;
+       
+}
+#menu1
+{
+        position: relative;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        float: right;
+        transition: .5s;
+       
+}
+#menu1 a 
+{
+        display: block;
+        color: black;
+        position: relative;
+        padding: 10px 30px;
+        font-size: large;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .5s;
+        box-sizing: border-box;
+}
+#menu1 a :hover
+{
+        color: yellow;
+        
+}
+}
